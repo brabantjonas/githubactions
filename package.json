@@ -2,8 +2,15 @@
   "name": "githubactions",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:js": "eslint public/**/*.js",
+    "lint:css": "stylelint public/**/*.css",
+    "fix:css": "stylelint public/**/*.css --fix",
+    "fix:js": "eslint public/**/*.js --fix",
+    "format": "prettier --check .",
+    "fix:format": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -20,6 +27,7 @@
   "dependencies": {
     "eslint": "^9.26.0",
     "prettier": "^3.5.3",
-    "stylelint": "^16.19.1"
+    "stylelint": "^16.19.1",
+    "stylelint-config-standard": "^38.0.0"
   }
 }
