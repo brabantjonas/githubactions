@@ -1,0 +1,6 @@
+/package-lock.json
+/node_modules/
+.idea/.gitignore
+.idea/githubactions.iml
+.idea/modules.xml
+.idea/vcs.xml
